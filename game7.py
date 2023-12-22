@@ -21,7 +21,7 @@ background_change_time = 300  # Tempo in secondi prima di cambiare lo sfondo
 background_change_timer = time.time() + background_change_time
 
 # Inizializza il giocatore con un'immagine PNG
-player_image = pygame.image.load("F:\Visual Studio Code\Ai\game\player2.png")  # Sostituisci con il tuo percorso e nome del file
+player_image = pygame.image.load("\escape-from-the-ships\player2.png")  # Sostituisci con il tuo percorso e nome del file
 player_image = pygame.transform.scale(player_image, (50, 50))  # Regola le dimensioni dell'immagine se necessario
 player_rect = player_image.get_rect()
 player_rect.x = WIDTH // 2 - player_rect.width // 2
@@ -29,7 +29,7 @@ player_rect.y = HEIGHT - 2 * player_rect.height
 player_speed = 5
 
 # Inizializza la skin per i nemici
-enemy_image = pygame.image.load("F:\Visual Studio Code\Ai\game\enemy.png")  # Sostituisci con il tuo percorso e nome del file
+enemy_image = pygame.image.load("\escape-from-the-ships\enemy.png")  # Sostituisci con il tuo percorso e nome del file
 enemy_image = pygame.transform.scale(enemy_image, (30, 30))  # Regola le dimensioni dell'immagine se necessario
 
 # Inizializza la lista dei nemici
@@ -37,7 +37,7 @@ enemy_speed = 5
 enemies = []
 
 # Inizializza le palline verdi (bonus di velocità)
-bonus_image = pygame.image.load("F:\Visual Studio Code\Ai\game\speed.png")  # Sostituisci con il tuo percorso e nome del file
+bonus_image = pygame.image.load("\escape-from-the-ships\speed.png")  # Sostituisci con il tuo percorso e nome del file
 bonus_image = pygame.transform.scale(bonus_image, (20, 20))  # Regola le dimensioni dell'immagine se necessario
 bonuses = []
 
